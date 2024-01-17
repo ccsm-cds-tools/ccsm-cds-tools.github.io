@@ -1,0 +1,63 @@
+:root {
+  --font-family-sans: 'Public Sans',sans-serif;
+  --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+.visually-hidden {
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
+}
+body > .container {
+  max-width: 1020px;
+}
+section {margin-bottom:3em}
+.top-header {padding-top:2em}
+
+.ccsm-cds-logo {width:350px}
+
+ul.menu {font-size:1.4rem;margin-left:27px}
+
+.hero {font-family: 'Public Sans', sans-serif;}
+.hero h1 {font-weight:500;line-height:1.25em;
+margin-top:2em;margin-bottom:0;}
+.hero h2 {font-weight:200;font-size:2rem}
+
+.highlights {
+  background-color:#f6f9f9;
+  padding:2rem 0;
+}
+
+h3 {margin:1em 0 0.2em}
+.tabs > ul {list-style:none}
+.tabs > ul li {display:inline-block;}
+.tabs ul li a {
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    padding: 1rem 1rem;
+    text-align: left;
+}
+
+.goals {display:flex;max-width:960px;justify-content:center}
+.goals .goal {flex-basis:50%;text-align:center;padding:1em 4em;}
+
+@media screen and (max-width: 720px) {
+  .goals .goal {flex-basis:100%}
+}
+
+.goals .goal img {width:70px}
+.tools-list {margin-left:4rem}
+
+.simple-list {list-style:none}
+.simple-list li {margin-bottom:2em}
+
+footer {
+background-color:#D5EFEA;
+padding-top:2em;
+font-size:1.3rem;
+}
