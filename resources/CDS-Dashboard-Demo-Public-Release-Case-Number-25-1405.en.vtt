@@ -1,0 +1,458 @@
+WEBVTT
+
+
+00:00:00.899 --> 00:00:02.779
+Awesome. Thank you, Gene, for teeing that up.
+
+
+00:00:04.000 --> 00:00:08.220
+Yeah,  and  as  Gene  said,  there's  multiple  ways  to  kind  of  integrate
+
+
+00:00:08.220 --> 00:00:10.039
+this  into  an  electronic  health  record,
+
+
+00:00:10.140 --> 00:00:12.920
+but  I'm  going  to  be  showing  our  clinical  dashboard,  which  is  what
+
+
+00:00:12.920 --> 00:00:15.520
+we're  currently  piloting  with  a  medical  center  right  now.
+
+
+00:00:15.939 --> 00:00:18.559
+So  what  I'm  showing  here  is  a  mock -up  of  what  you  can  imagine
+
+
+00:00:18.559 --> 00:00:21.540
+would  be  a  clinician's  view  of  their  electronic  health  record.
+
+
+00:00:22.000 --> 00:00:25.639
+Of  course,  that  view  is  actually  going  to  change  depending  on,  you
+
+
+00:00:25.639 --> 00:00:26.860
+know,  what  health  center  you're  at,
+
+
+00:00:27.360 --> 00:00:30.540
+But  what  I  might  have  here  is  for  patients  who  I'm  going  to  be
+
+
+00:00:30.540 --> 00:00:33.020
+managing  this  week  as  a  clinician  and
+
+
+00:00:33.139 --> 00:00:37.220
+clicking  the  link  of  these  patients  name  will  allow  me  to  see  their
+
+
+00:00:37.220 --> 00:00:39.000
+cervical  cancer  screening  and  management
+
+
+00:00:39.340 --> 00:00:43.380
+recommendation.  So  I  just  clicked  on  this  patient  zone  here  and  what
+
+
+00:00:43.380 --> 00:00:45.900
+what's  happening  in  the  background  it  happened  kind  of  quickly
+
+
+00:00:46.159 --> 00:00:50.439
+but  is  that  the  EHR  or  electronic  health  record  is  reaching  out  to
+
+
+00:00:50.439 --> 00:00:53.279
+our  CDS  app  and  then  our  CDS  app  is
+
+
+00:00:53.240 --> 00:00:56.580
+asking  it  for  all  of  the  patient  data  that  it  might  need  to
+
+
+00:00:56.580 --> 00:00:57.740
+calculate  a  recommendation.
+
+
+00:00:58.540 --> 00:01:01.639
+Then  when  that  comes  back  to  our  app,  what  it's  doing  is  filtering
+
+
+00:01:01.639 --> 00:01:02.759
+that  down  to  really
+
+
+00:01:02.880 --> 00:01:07.139
+just  display  the  key  data  that  we  need  to  generate  that  risk  score
+
+
+00:01:07.139 --> 00:01:08.239
+that  Gene  had  mentioned,
+
+
+00:01:08.800 --> 00:01:11.480
+and that data we show on the left-hand side of the screen.
+
+
+00:01:11.860 --> 00:01:15.080
+So  the  key  components  are  the  screening  and  management  testing
+
+
+00:01:15.080 --> 00:01:16.739
+history  on  the  top  left,
+
+
+00:01:17.699 --> 00:01:21.680
+and  then  on  the  bottom  is  additional  relevant  medical  history  that
+
+
+00:01:21.680 --> 00:01:23.220
+can  kind  of  help  the
+
+
+00:01:23.220 --> 00:01:26.680
+to contextualize everything and might not be crucial
+
+
+00:01:27.199 --> 00:01:29.199
+to the risk-based algorithm,
+
+
+00:01:29.339 --> 00:01:31.319
+but helps the clinician kind of provide,
+
+
+00:01:31.839 --> 00:01:34.400
+see that whole patient's journey in context.
+
+
+00:01:35.419 --> 00:01:37.959
+So this patient is currently in management,
+
+
+00:01:38.540 --> 00:01:40.540
+whereas a normal patient who's screening
+
+
+00:01:40.739 --> 00:01:43.279
+for a 33-year-old, as this patient is,
+
+
+00:01:43.379 --> 00:01:45.300
+would usually come back every five years.
+
+
+00:01:45.760 --> 00:01:47.959
+You can see, based upon this patient's history,
+
+
+00:01:48.379 --> 00:01:51.419
+that they've actually been coming at more frequent intervals
+
+
+00:01:51.419 --> 00:01:54.260
+because they've had some abnormal results
+
+
+00:01:54.540 --> 00:01:56.699
+for both their HPV testing
+
+
+00:01:56.769 --> 00:01:58.879
+and their cervical cytology testing.
+
+
+00:01:59.500 --> 00:02:01.559
+And so how this actually works
+
+
+00:02:01.559 --> 00:02:04.900
+or what this is computing is that the most recent tests,
+
+
+00:02:05.279 --> 00:02:07.059
+so those top two rows combined
+
+
+00:02:07.339 --> 00:02:09.199
+with the previous testing history,
+
+
+00:02:10.220 --> 00:02:12.559
+kind of come together and get fed into this algorithm
+
+
+00:02:12.800 --> 00:02:14.520
+to generate a risk estimate,
+
+
+00:02:14.619 --> 00:02:16.179
+which is shown in this lookup table
+
+
+00:02:16.339 --> 00:02:17.580
+on the bottom right here.
+
+
+00:02:18.059 --> 00:02:20.679
+So this patient, because of all this history
+
+
+00:02:20.679 --> 00:02:26.419
+combined  together  has  an  immediate  pre -cancer  risk  of  just  over  1 %
+
+
+00:02:26.419 --> 00:02:28.860
+and  then  a  5 -year  pre -cancer
+
+
+00:02:28.919 --> 00:02:30.300
+risk of 4%.
+
+
+00:02:30.479 --> 00:02:34.259
+And  so  according  to  these  guidelines  that  we  have  printed  out  here,
+
+
+00:02:34.679 --> 00:02:35.940
+that  corresponds  with
+
+
+00:02:36.160 --> 00:02:37.580
+a one-year follow-up.
+
+
+00:02:37.919 --> 00:02:42.119
+So  again,  this  patient  has  had  some  abnormalities,  so  is  coming  back
+
+
+00:02:42.119 --> 00:02:43.360
+more  frequently  than  the
+
+
+00:02:43.399 --> 00:02:48.960
+normally  prescribed  5 -year  interval,  but  it  isn't  severe  enough  that
+
+
+00:02:48.960 --> 00:02:49.800
+their  risk  would
+
+
+00:02:49.740 --> 00:02:51.919
+warrant them getting an immediate intervention.
+
+
+00:02:52.759 --> 00:02:54.660
+Now, what I'm going to show next is,
+
+
+00:02:55.100 --> 00:02:56.639
+in working with our pilot partners,
+
+
+00:02:56.860 --> 00:02:59.720
+one source of feedback we've got is
+
+
+00:02:59.800 --> 00:03:02.720
+that there are some clinical data elements that just
+
+
+00:03:02.820 --> 00:03:06.940
+will not consistently be recorded in a structured format
+
+
+00:03:07.240 --> 00:03:08.720
+in the electronic health record.
+
+
+00:03:09.160 --> 00:03:11.100
+So this would be things like whether the patient's
+
+
+00:03:11.660 --> 00:03:13.220
+immunosuppressed, if they're pregnant,
+
+
+00:03:14.139 --> 00:03:15.919
+if they have future pregnancy concerns,
+
+
+00:03:15.979 --> 00:03:18.020
+or maybe they showed up to an encounter
+
+
+00:03:18.020 --> 00:03:20.179
+with an abnormal bleeding condition.
+
+
+00:03:20.740 --> 00:03:24.300
+And so for these cases, we've integrated these toggle switches
+
+
+00:03:24.479 --> 00:03:26.539
+to allow the clinician to say, hey,
+
+
+00:03:26.759 --> 00:03:30.259
+I want to refire this clinical decision support,
+
+
+00:03:30.720 --> 00:03:33.039
+show a new recommendation with the same history,
+
+
+00:03:33.500 --> 00:03:36.320
+but as if one of these data elements existed.
+
+
+00:03:36.839 --> 00:03:37.960
+So what I'm going to do in a moment
+
+
+00:03:38.160 --> 00:03:40.639
+is hit the immunosuppressed toggle switch,
+
+
+00:03:41.059 --> 00:03:44.039
+and you'll see what happens then is that that loading spinner
+
+
+00:03:44.100 --> 00:03:45.100
+will come up again.
+
+
+00:03:45.460 --> 00:03:47.520
+This will recalculate a recommendation,
+
+
+00:03:49.199 --> 00:03:50.779
+and that will be a new recommendation
+
+
+00:03:50.899 --> 00:03:52.160
+with that same patient history,
+
+
+00:03:52.320 --> 00:03:55.080
+but as if that patient was immunosuppressed.
+
+
+00:03:56.080 --> 00:03:57.839
+And so when that happens,
+
+
+00:03:58.000 --> 00:04:00.960
+you'll see that this recommendation will actually change
+
+
+00:04:01.080 --> 00:04:05.000
+from a one-year follow-up to a colposcopy,
+
+
+00:04:05.479 --> 00:04:10.479
+because at that point, since the patient is immunosuppressed,
+
+
+00:04:11.000 --> 00:04:13.319
+that actually raises their risk level
+
+
+00:04:13.320 --> 00:04:18.339
+to a point that they now need that immediate intervention
+
+
+00:04:18.519 --> 00:04:20.959
+as opposed to just coming back a year later.
+
+
+00:04:21.820 --> 00:04:23.739
+And then kind of a final way we've,
+
+
+00:04:24.839 --> 00:04:27.480
+a final way you can interact with this dashboard
+
+
+00:04:27.619 --> 00:04:31.000
+is these add result and add additional resource buttons
+
+
+00:04:31.220 --> 00:04:32.220
+on the left side.
+
+
+00:04:32.579 --> 00:04:34.679
+So if there was something that you knew
+
+
+00:04:35.119 --> 00:04:38.440
+this patient had a test result or some sort of condition
+
+
+00:04:38.640 --> 00:04:41.839
+that wasn't necessarily represented in this history here
+
+
+00:04:41.839 --> 00:04:44.940
+because maybe it wasn't entered in a structured format
+
+
+00:04:45.160 --> 00:04:47.239
+or wasn't entered into the EHR at all,
+
+
+00:04:47.559 --> 00:04:49.359
+you could go in and add a result
+
+
+00:04:49.559 --> 00:04:51.959
+and then again, recalculate a recommendation
+
+
+00:04:52.279 --> 00:04:53.859
+like we did with the toggle switches.
+
+
+00:04:54.700 --> 00:04:58.119
+So that's kind of a general overview of what we've built.
+
+
+00:04:58.239 --> 00:05:00.040
+This is a tool that we're currently piloting
+
+
+00:05:00.079 --> 00:05:02.279
+with the University of Mississippi Medical Center.
+
+
+00:05:02.739 --> 00:05:05.880
+It's currently in production in their health system
+
+
+00:05:06.079 --> 00:05:07.459
+and this upcoming calendar year,
+
+
+00:05:07.540 --> 00:05:11.159
+we're looking forward to starting a clinical evaluation phase
+
+
+00:05:11.160 --> 00:05:14.140
+where we're going to see how this actually works in practice
+
+
+00:05:14.250 --> 00:05:16.959
+and affects the treatment of patients there.
+
+
+00:05:17.940 --> 00:05:19.320
+So that'll turn things back over to Gene.
+
+
+00:05:45.140 --> 00:05:47.940
+[BLANK_AUDIO]
+

@@ -91,27 +91,34 @@
   <h2>Software, Tools and Standards</h2>
   <p>These are some of the key technologies used to implement computable guidelines for cervical cancer screening and management. The goal was to develop and use industry standards and open-source software, and be able to integrate with any electronic health systems which support these technologies.</p>
   <div class="tools-list">
-  <h3>CCSM CDS Tools</h3>
-  <p>This is the main repository for the software developed for this effort. The tools and software developed for cervical cancer screening and management are available under an open-source license (<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>) and may be accessed from the <a href="https://github.com/ccsm-cds-tools">CCSM-CDS-Tools GitHub Repository</a>. These tools are built on open health data standards and tools, making them accessible to developers familiar with these technologies. </p>
-  <p>The primary software available includes:</p>
-  <ul class="simple-list">
-    <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-with-tests">CCSM-CDS</a><br> This defines the logic used to provide recommendations for cervical cancer screening and management. To verify the correctness of the CCSM CDS, a set of automated tests have been included which use synthetic patient data.</li>
-    <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-service">CCSM-CDS-Service</a><br>This is an application which provides RESTful APIs for invoking the CCSM-CDS and returning calculated results.</li>
-    <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-dashboard">CCSM-CDS-Dashboard</a><br>A sample web-based interface to the CCSM-CDS is available. This allows integration of the CDS service with an EHR through the SMART on FHIR API, and can be used as a starting point for clinical pilots or testing.</li>
-    </ul>
-  
-  <h3>Clinical Quality Language</h3>
-  <p><a href="https://cql.hl7.org">Clinical Quality Langauge</a> (CQL) is a high-level, domain-specific language used for representing clinically-focused logic and queries related to electronic health data. CQL is an HL7 standard, and is intended to be human readable. In addition to its use in clinical decision support, it is also widely used in the development of <a href="https://ecqi.healthit.gov/ecqms">electronic clinical quality measures (eCQMs)</a>.</p>
-  
-  <h3>Fast Healthcare Interoperability Resources (FHIR®)</h3>
-  <p><a href="http://hl7.org/fhir/">Fast Healthcare Interoperability Resources</a> (FHIR®) is an international IT standard for representing and exchanging healthcare information electronically. FHIR provides general data structures or “resources” for representing a variety of clinical and healthcare-related data. The CCSM CDS Tools use FHIR to represent the structure of resources used in cervical cancer screening and management. 
-  
-  <h3>CDS Hooks</h3>
-  <p><a href="https://cds-hooks.org">CDS Hooks</a> is a specification for invoking clinical decision support tools at appropriate points in clinical workflow, across a variety of applications and interfaces. The CCSM CDS Tools software supports CDS Hooks integration with EHRs.</p>
-  
-  <h3>SMART on FHIR</h3>
-  <p>Another interface supported by CCSM CDS Tools is the <a href="https://smarthealthit.org/smart-on-fhir-api/">SMART on FHIR application programming interface (API)</a>. This allows the use and integration of new applications with existing health IT systems, such as EHRs and patient portals. The CCSM CDS Tools software supports the SMART on FHIR interface.</p>
+    <h3>CCSM CDS Tools</h3>
+    <p>This is the main repository for the software developed for this effort. The tools and software developed for cervical cancer screening and management are available under an open-source license (<a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>) and may be accessed from the <a href="https://github.com/ccsm-cds-tools">CCSM-CDS-Tools GitHub Repository</a>. These tools are built on open health data standards and tools, making them accessible to developers familiar with these technologies. </p>
+    <p>The primary software available includes:</p>
+    <ul class="simple-list">
+      <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-with-tests">CCSM-CDS</a><br> This defines the logic used to provide recommendations for cervical cancer screening and management. To verify the correctness of the CCSM CDS, a set of automated tests have been included which use synthetic patient data.</li>
+      <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-service">CCSM-CDS-Service</a><br>This is an application which provides RESTful APIs for invoking the CCSM-CDS and returning calculated results.</li>
+      <li><a href="https://github.com/ccsm-cds-tools/ccsm-cds-dashboard">CCSM-CDS-Dashboard</a><br>A sample web-based interface to the CCSM-CDS is available. This allows integration of the CDS service with an EHR through the SMART on FHIR API, and can be used as a starting point for clinical pilots or testing.</li>
+      </ul>
+    
+    <h3>Clinical Quality Language</h3>
+    <p><a href="https://cql.hl7.org">Clinical Quality Langauge</a> (CQL) is a high-level, domain-specific language used for representing clinically-focused logic and queries related to electronic health data. CQL is an HL7 standard, and is intended to be human readable. In addition to its use in clinical decision support, it is also widely used in the development of <a href="https://ecqi.healthit.gov/ecqms">electronic clinical quality measures (eCQMs)</a>.</p>
+    
+    <h3>Fast Healthcare Interoperability Resources (FHIR®)</h3>
+    <p><a href="http://hl7.org/fhir/">Fast Healthcare Interoperability Resources</a> (FHIR®) is an international IT standard for representing and exchanging healthcare information electronically. FHIR provides general data structures or “resources” for representing a variety of clinical and healthcare-related data. The CCSM CDS Tools use FHIR to represent the structure of resources used in cervical cancer screening and management. 
+    
+    <h3>CDS Hooks</h3>
+    <p><a href="https://cds-hooks.org">CDS Hooks</a> is a specification for invoking clinical decision support tools at appropriate points in clinical workflow, across a variety of applications and interfaces. The CCSM CDS Tools software supports CDS Hooks integration with EHRs.</p>
+    
+    <h3>SMART on FHIR</h3>
+    <p>Another interface supported by CCSM CDS Tools is the <a href="https://smarthealthit.org/smart-on-fhir-api/">SMART on FHIR application programming interface (API)</a>. This allows the use and integration of new applications with existing health IT systems, such as EHRs and patient portals. The CCSM CDS Tools software supports the SMART on FHIR interface.</p>
   </div>
+  <div>
+    <p>A demonstration of the CCSM CDS Dashboard:</p>
+    <video controls style="width:100%">
+      <source src="resources/CDS-Dashboard-Demo-Public-Release-Case-Number-25-1405.mp4" type="video/mp4" />
+      <track label="English" kind="subtitles" srclang="en"src="resources/CDS-Dashboard-Demo-Public-Release-Case-Number-25-1405.vtt" default />
+        Download the <a href="resources/CDS-Dashboard-Demo-Public-Release-Case-Number-25-1405.mp4">MP4</a> video. (9.7MB)
+      </video>
 </div>
 
 <div class="container" id="contact">
